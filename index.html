@@ -29,5 +29,18 @@
       <h2 id="current-calculation">0</h2>
       <h2>Result: <span id="current-result">0</span></h2>
     </section>
+    <!-- Javascript를 불러오는 방법
+     1. head 태그 안에 <script> 태그 추가 
+      단점. script가 길어질수록 html파일도 길어진다.
+      <script>
+        alert('This works - between script tags!');
+      </script>
+    2. <script>태그에 source 속성(src)을 추가해 임포트한다.-->
+    <!-- 추가 설명
+        스크립트가 완료되기 전까지는 페이지가 렌더링되지않는다.
+        app.js파일에 작성할 코드가 vendor.js파일 내의 코드를 의존하기때문에
+        vendor.js를 app.js보다 먼저 불러와야한다-->
+     <script src="assets/scripts/vendor.js"></script>
+     <script src="assets/scripts/app.js"></script>
   </body>
 </html>
